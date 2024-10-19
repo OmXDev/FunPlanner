@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1; /* Holds visible for longer */
+    }
+    70% {
+      opacity: 1; /* Remain visible */
+    }
+    100% {
+      opacity: 0; /* Fade out */
+    }
+  }
+  
+  .animate-fade {
+    animation: fade 6s ease-in-out infinite; /* Adjust the total duration as needed */
+  }
+  
+  html {
+    scroll-behavior: smooth;
+}
+
+.font-type {
+  font-family: 'Dancing Script', cursive;
+}
